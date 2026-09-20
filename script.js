@@ -1,1 +1,0 @@
-const loader=document.getElementById('loader'),page=document.getElementById('page'),pct=document.getElementById('pct'),bar=document.getElementById('bar');let n=0;const t=setInterval(()=>{n+=Math.floor(Math.random()*5)+2;if(n>=100){n=100;clearInterval(t);setTimeout(()=>{loader.classList.add('hide');page.classList.add('ready')},450)}pct.textContent=n;bar.style.width=n+'%'},55);
